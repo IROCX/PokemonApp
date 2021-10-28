@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "In the project directory, you can run:",
+  "main": "index.js",
+  "scripts": {
+    "start-backend" : "cd Frontend && npm start",
+    "start-frontend" : "cd Backend && npm start",
+    "run-app": "concurrently --kill-others \"npm i\" \"npm run start-backend\"  \"npm run start-frontend\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
