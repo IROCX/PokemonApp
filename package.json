@@ -4,14 +4,10 @@
   "description": "In the project directory, you can run:",
   "main": "index.js",
   "scripts": {
-    "start-backend" : "cd Frontend && npm start",
-    "start-frontend" : "cd Backend && npm start",
-    "run-app": "concurrently --kill-others \"npm i\" \"npm run start-backend\"  \"npm run start-frontend\" "
+    "start-frontend" : "cd Frontend && npm i && npm start",
+    "start-backend" : "cd Backend && npm i && npm start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^6.3.0"
-  }
+  "license": "ISC"
 }
